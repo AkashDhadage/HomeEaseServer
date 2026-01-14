@@ -15,6 +15,9 @@ app.use(cors({
 app.use(express.json());
 
 // Routes
+app.get("/test", (req, res) => {
+  res.json({ message: "Test endpoint working!" });
+});
 app.use("/api/auth", authRoutes);
 app.use("/api/admin", adminRoutes);
 app.use("/api/customer", customerRoutes);
