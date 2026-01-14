@@ -9,7 +9,7 @@ import cors from 'cors';
 dotenv.config();
 const app = express();
 app.use(cors({
-  origin: "http://localhost:5173",  // frontend URL
+  origin: "https://homeservices-gold.vercel.app/",  // frontend URL
   credentials: true
 }));
 app.use(express.json());
