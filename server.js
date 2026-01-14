@@ -9,7 +9,7 @@ import cors from 'cors';
 dotenv.config();
 const app = express();
 app.use(cors({
-  origin: "https://homeservices-gold.vercel.app/",  // frontend URL
+  origin: true,  // frontend URL
   credentials: true
 }));
 app.use(express.json());
